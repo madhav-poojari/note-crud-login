@@ -1,0 +1,54 @@
+###
+POST http://localhost:4068/signup
+
+{
+    "name": "here we go",
+    "email": "haerewego@gmail.com",
+    "password": "herewego"
+}
+
+###
+POST http://localhost:4068/login
+
+{
+    "email": "herewego@gmail.com",
+    "password": "aherewego"
+}
+
+###
+POST http://localhost:4068/notes
+
+{
+  "sid": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTUzODg5NzEsInN1YiI6ImhlcmV3ZWdvQGdtYWlsLmNvbSJ9.xxPh-ZaPQ5_OI2KK86pnlJlt8gzNvEP87pr5Bg1jo48",
+  "note": "note by here we go"
+}
+
+###
+POST http://localhost:4068/notes
+
+{
+  "sid": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTUzODg5NzEsInN1YiI6ImhlcmV3ZWdvQGdtYWlsLmNvbSJ9.xxPh-ZaPQ5_OI2KK86pnlJlt8gzNvEP87pr5Bg1jo48",
+  "note": "note 2 by here we go"
+}
+
+###
+GET http://localhost:4068/notes
+
+{
+  "sid": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTUzODg5NzEsInN1YiI6ImhlcmV3ZWdvQGdtYWlsLmNvbSJ9.xxPh-ZaPQ5_OI2KK86pnlJlt8gzNvEP87pr5Bg1jo48"
+}
+
+###
+DELETE http://localhost:4068/notes
+
+{
+  "sid": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTUzODg5NzEsInN1YiI6ImhlcmV3ZWdvQGdtYWlsLmNvbSJ9.xxPh-ZaPQ5_OI2KK86pnlJlt8gzNvEP87pr5Bg1jo48",
+  "id": "650d916de199c6ebdf650559"
+}
+
+###
+GET http://localhost:4068/notes
+
+{
+  "sid": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTUzODg5NzEsInN1YiI6ImhlcmV3ZWdvQGdtYWlsLmNvbSJ9.xxPh-ZaPQ5_OI2KK86pnlJlt8gzNvEP87pr5Bg1jo48"
+}
