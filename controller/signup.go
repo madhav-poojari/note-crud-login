@@ -55,6 +55,10 @@ func Signup(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Return a success response
+	resp := map[string]string{
+		"message": "User registered successfully",
+	}
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("User registered successfully"))
+	json.NewEncoder(w).Encode(resp)
 }

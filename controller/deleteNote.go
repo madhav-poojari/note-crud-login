@@ -72,6 +72,7 @@ func DeleteUserNoteHandler(w http.ResponseWriter, r *http.Request) {
 		"message": "succesfully deleted note",
 	}
 	// Return a success response
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(resp)
 }
